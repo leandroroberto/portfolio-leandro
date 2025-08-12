@@ -29,7 +29,7 @@ const Footer = () => {
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com/leandro-tech",
+      href: "https://linkedin.com/in/leandro-tech",
       label: "LinkedIn"
     },
     {

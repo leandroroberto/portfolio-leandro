@@ -66,7 +66,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="h-6 w-6" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/leandro-tech",
+      url: "https://linkedin.com/in/leandro-tech",
       description: "Conecte-se comigo profissionalmente"
     },
     {

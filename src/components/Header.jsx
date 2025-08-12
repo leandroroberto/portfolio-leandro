@@ -54,7 +54,7 @@ const Header = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/leandro-tech"
+              href="https://linkedin.com/in/leandro-tech"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-primary transition-colors"
@@ -91,7 +91,7 @@ const Header = () => {
               ))}
               <div className="flex items-center space-x-4 pt-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/leandroroberto"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-primary transition-colors"
@@ -99,7 +99,7 @@ const Header = () => {
                   <Github className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/leandro-tech"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-primary transition-colors"
