@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -23,16 +24,24 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simular envio do formulário
-    setTimeout(() => {
+
+    emailjs.sendForm(
+      'service_51n8e9c',      // seu Service ID
+      'template_teg1m5h',     // seu Template ID
+      e.target,               // o formulário
+      'avc_jh31bkL9KsZCz'  // sua Public Key do EmailJS
+    ).then(() => {
       alert('Mensagem enviada com sucesso! Retornarei em breve.');
       setFormData({ name: '', email: '', subject: '', message: '' });
       setIsSubmitting(false);
-    }, 1000);
+    }, (error) => {
+      alert('Erro ao enviar a mensagem, tente novamente.');
+      setIsSubmitting(false);
+      console.error(error);
+    });
   };
 
   const contactInfo = [
@@ -300,4 +309,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

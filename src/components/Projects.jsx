@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, Filter } from 'lucide-react';
 
+
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('Todos');
 
@@ -12,7 +13,7 @@ const Projects = () => {
       id: 1,
       title: "Chatbot Inteligente com LangChain",
       description: "Sistema de chatbot avançado usando LangChain para processamento de linguagem natural, capaz de responder perguntas complexas e manter contexto de conversação.",
-      image: "/api/placeholder/400/250",
+      image: "/assets/coming_soon.png",
       technologies: ["Python", "LangChain", "OpenAI", "Streamlit"],
       category: "IA",
       github: "https://github.com",
@@ -20,10 +21,10 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 6,
+      id: 2,
       title: "Assistente Virtual",
       description: "Assistente virtual com reconhecimento de voz e processamento de comandos naturais usando IA.",
-      image: "/api/placeholder/400/250",
+      image: "/assets/coming_soon.png",
       technologies: ["Python", "SpeechRecognition", "LangChain", "TTS"],
       category: "IA",
       github: "https://github.com",
@@ -66,7 +67,7 @@ const Projects = () => {
                       <div className="text-6xl opacity-20">🚀</div>
                     </div>
                     <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground">
-                      Destaque
+                      em breve
                     </Badge>
                   </div>
                   <CardHeader>
