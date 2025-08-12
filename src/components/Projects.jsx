@@ -163,7 +163,7 @@ const Projects = () => {
             <p className="text-lg text-gray-600 mb-6">
               Quer ver mais projetos ou discutir uma colaboração?
             </p>
-            <a href='https://github.com/leandroroberto'>
+            <a href='https://github.com/leandroroberto' target="_blank">
             <Button size="lg" className="px-8">
               <Github className="h-5 w-5 mr-2" />
               Ver Todos no GitHub
