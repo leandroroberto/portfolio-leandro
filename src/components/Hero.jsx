@@ -54,7 +54,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <a href='public\curriculo_leandro.pdf'>
+            <a href='/curriculo_leandro.pdf' download>
             <Button
               size="lg"
               className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-3"
