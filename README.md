@@ -35,7 +35,7 @@ No meu portfólio, você encontrará:
 ---
 
 ## 🔗 Acesse o Portfólio
-[🌎 Clique aqui para visitar meu portfólio online](https://seu-link-aqui.vercel.app](https://leandroroberto.vercel.app)
+[🌎 Clique aqui para visitar meu portfólio online](https://leandroroberto.vercel.app)
 
 ---
 
