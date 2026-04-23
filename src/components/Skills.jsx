@@ -232,10 +232,16 @@ const Skills = () => {
               {[
                 { name: "Python", icon: "🐍" },
                 { name: "Selenium", icon: "⚙️" },
+                { name: "GitHub", icon: "🐙" },
+                { name: "APIs", icon: "🔗" },
+                { name: "Automação", icon: "🤖" },
                 { name: "FastAPI", icon: "🚀" },
-                { name: "Git", icon: "📝" },
-                { name: "IA", icon: "🤖" },
-                { name: "APIs", icon: "🔗" }
+                { name: "IA", icon: "🧠" },
+                { name: "SQL", icon: "🗄️" },
+                { name: "JavaScript", icon: "🟨" },
+                { name: "HTML/CSS", icon: "🌐" },
+                { name: "Git", icon: "📂" },
+                { name: "Linux", icon: "🐧" }
               ].map((tech, index) => (
                 <div
                   key={index}
