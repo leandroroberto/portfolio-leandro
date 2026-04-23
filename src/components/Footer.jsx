@@ -9,6 +9,7 @@ const Footer = () => {
 
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -58,12 +59,18 @@ const Footer = () => {
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">💻</span>
               </div>
-              <span className="text-2xl font-bold">DevPortfolio</span>
+
+              <span className="text-2xl font-bold">
+                Leandro Roberto
+              </span>
             </div>
+
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Desenvolvedor em formação Python especializando-se em LangChain, automação e soluções inteligentes. 
-              Transformando ideias em código que faz a diferença.
+              Estudante de Python, automação e Inteligência Artificial aplicada,
+              desenvolvendo projetos práticos e evoluindo constantemente na área
+              de tecnologia.
             </p>
+
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
@@ -82,7 +89,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Links Rápidos</h3>
+            <h3 className="text-lg font-semibold mb-6">
+              Navegação
+            </h3>
+
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -99,15 +109,20 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Contato</h3>
+            <h3 className="text-lg font-semibold mb-6">
+              Contato
+            </h3>
+
             <div className="space-y-3 text-gray-300">
               <p>São Paulo, SP - Brasil</p>
+
               <a
                 href="mailto:leandrodev.roberto@gmail.com"
                 className="block hover:text-white transition-colors"
               >
                 leandrodev.roberto@gmail.com
               </a>
+
               <a
                 href="tel:+5511952299631"
                 className="block hover:text-white transition-colors"
@@ -123,18 +138,29 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="flex items-center space-x-2 text-gray-400">
-              <span>© {currentYear} DevPortfolio. Feito com</span>
+              <span>© {currentYear} Leandro Roberto. Feito com</span>
+
               <Heart className="h-4 w-4 text-red-500" />
-              <span>e muito código.</span>
+
+              <span>e muito aprendizado.</span>
             </div>
 
             {/* Tech Stack */}
             <div className="flex items-center space-x-4 text-gray-400 text-sm">
               <span>Construído com:</span>
+
               <div className="flex space-x-2">
-                <span className="px-2 py-1 bg-gray-800 rounded text-xs">React</span>
-                <span className="px-2 py-1 bg-gray-800 rounded text-xs">Tailwind</span>
-                <span className="px-2 py-1 bg-gray-800 rounded text-xs">Vite</span>
+                <span className="px-2 py-1 bg-gray-800 rounded text-xs">
+                  React
+                </span>
+
+                <span className="px-2 py-1 bg-gray-800 rounded text-xs">
+                  Tailwind
+                </span>
+
+                <span className="px-2 py-1 bg-gray-800 rounded text-xs">
+                  Vite
+                </span>
               </div>
             </div>
           </div>
@@ -143,7 +169,8 @@ const Footer = () => {
         {/* Additional Info */}
         <div className="mt-8 text-center text-gray-400 text-sm">
           <p>
-            Sempre aberto a novas oportunidades e colaborações. 
+            Atualmente estudando automação com Python, Selenium e Inteligência Artificial aplicada.
+
             <button
               onClick={() => scrollToSection('#contato')}
               className="text-primary hover:text-primary/80 ml-1 underline"
@@ -158,4 +185,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
