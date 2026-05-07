@@ -10,12 +10,12 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Automação Web com Selenium",
+      title: "Bing Search Bot",
       description:
-        "Em breve um projeto completo de automação web utilizando Python e Selenium para automatizar tarefas repetitivas em navegadores.",
+        "Projeto de automação web utilizando Python e Selenium para realizar pesquisas no Bing, capturar títulos dos resultados e salvar informações automaticamente em arquivos TXT.",
       technologies: ["Python", "Selenium", "Automação"],
       category: "Automação",
-      github: "https://github.com/leandroroberto",
+      github: "https://github.com/leandroroberto/bing-search-bot",
       demo: null,
       featured: true
     },
@@ -68,7 +68,7 @@ const Projects = () => {
             </h2>
 
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Atualmente estou desenvolvendo novos projetos focados em
+              Atualmente estou desenvolvendo projetos focados em
               <strong> Python</strong>, <strong>automação</strong>,
               <strong> Selenium</strong> e
               <strong> Inteligência Artificial aplicada</strong>.
@@ -89,11 +89,19 @@ const Projects = () => {
                 >
                   <div className="relative">
                     <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                      <div className="text-6xl opacity-20">🚧</div>
+                      <div className="text-6xl opacity-20">
+                        {project.category === 'Automação'
+                          ? '⚙️'
+                          : project.category === 'Backend'
+                          ? '🌐'
+                          : '🤖'}
+                      </div>
                     </div>
 
                     <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground">
-                      Em breve
+                      {project.title === 'Bing Search Bot'
+                        ? 'Disponível'
+                        : 'Em breve'}
                     </Badge>
                   </div>
 
