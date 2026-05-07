@@ -88,19 +88,59 @@ const Projects = () => {
                   className="card-hover border-0 shadow-lg overflow-hidden"
                 >
                   <div className="relative">
+
+                    {/* Área da imagem */}
                     <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                      <div className="text-6xl opacity-20">
-                        {project.category === 'Automação'
-                          ? '⚙️'
-                          : project.category === 'Backend'
-                          ? '🌐'
-                          : '🤖'}
-                      </div>
+
+                      {project.category === 'Automação' ? (
+                        <div className="flex gap-6 items-center opacity-40">
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python"
+                            className="w-20 h-20"
+                          />
+
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
+                            alt="Selenium"
+                            className="w-20 h-20"
+                          />
+                        </div>
+                      ) : project.category === 'Backend' ? (
+                        <div className="flex gap-6 items-center opacity-40">
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python"
+                            className="w-20 h-20"
+                          />
+
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                            alt="FastAPI"
+                            className="w-20 h-20"
+                          />
+                        </div>
+                      ) : (
+                        <div className="flex gap-6 items-center opacity-40">
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python"
+                            className="w-20 h-20"
+                          />
+
+                          <img
+                            src="https://avatars.githubusercontent.com/u/126733545?s=200&v=4"
+                            alt="LangChain"
+                            className="w-20 h-20 rounded-xl"
+                          />
+                        </div>
+                      )}
                     </div>
 
+                    {/* Badge */}
                     <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground">
                       {project.title === 'Bing Search Bot'
-                        ? 'Disponível'
+                        ? 'Em desenvolvimento'
                         : 'Em breve'}
                     </Badge>
                   </div>
@@ -186,13 +226,50 @@ const Projects = () => {
                 className="card-hover border-0 shadow-lg overflow-hidden"
               >
                 <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                  <div className="text-4xl opacity-30">
-                    {project.category === 'IA'
-                      ? '🤖'
-                      : project.category === 'Automação'
-                      ? '⚙️'
-                      : '🌐'}
-                  </div>
+
+                  {project.category === 'Automação' ? (
+                    <div className="flex gap-6 items-center opacity-40">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python"
+                        className="w-16 h-16"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
+                        alt="Selenium"
+                        className="w-16 h-16"
+                      />
+                    </div>
+                  ) : project.category === 'Backend' ? (
+                    <div className="flex gap-6 items-center opacity-40">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python"
+                        className="w-16 h-16"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                        alt="FastAPI"
+                        className="w-16 h-16"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex gap-6 items-center opacity-40">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python"
+                        className="w-16 h-16"
+                      />
+
+                      <img
+                        src="https://avatars.githubusercontent.com/u/126733545?s=200&v=4"
+                        alt="LangChain"
+                        className="w-16 h-16 rounded-xl"
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <CardHeader>
